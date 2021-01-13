@@ -134,7 +134,11 @@ fi
 
 ## Print the display
 
-echo "$state_icon $trunc_track - $trunc_artist"
+if [ ! "$state" = "playing" ]; then
+  echo "♫"
+else
+  echo "$trunc_track - $trunc_artist $state_icon"
+fi
 echo "---"
 
 echo -e "Track:\\t$track"
