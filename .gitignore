@@ -1,0 +1,4 @@
+# deps
+node_modules
+# hacky way to omit my tokens
+env.js

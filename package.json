@@ -1,0 +1,22 @@
+{
+  "name": "bitbar-plugins",
+  "version": "1.0.0",
+  "description": "i like the bitbar",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushyka/bb-plugins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pushyka/bb-plugins/issues"
+  },
+  "homepage": "https://github.com/pushyka/bb-plugins#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
