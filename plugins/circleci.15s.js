@@ -40,7 +40,7 @@ function processResponse(body) {
     }
   });
   console.log('---');
-  console.log('Open dashboard | href=https://app.circleci.com/pipelines/github');
+  console.log(`Open dashboard | href=https://app.circleci.com/pipelines/github/${env.CIRCLE_REPO}`);
 }
 
 function printLine(requestBody) {
