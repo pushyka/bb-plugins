@@ -67,7 +67,7 @@ function orderBuilds(formattedBuilds) {
 async function start() {
   const options = {
     method: "GET",
-    url: "https://circleci.com/api/v1.1/recent-builds?limit=10&shallow=true",
+    url: "https://circleci.com/api/v1.1/recent-builds?limit=5&shallow=true",
     headers: { "Circle-Token": env.CIRCLE_TOKEN, "Accept": "application/json"},
   };
   request(options, (error, response, body) => {
