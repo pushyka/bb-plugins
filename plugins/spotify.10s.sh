@@ -77,12 +77,6 @@ if [ "$1" = 'lyrics' ]; then
   exit
 fi
 
-if [ "$state" = "playing" ]; then
-  state_icon="▶"
-else
-  state_icon="❚❚"
-fi
-
 # Clean up track and/or album names
 if [[ $CLEAN_TRACK_NAMES ]]; then
   track="$(echo -e "${track/ - /\\n}" | head -n 1)"
@@ -137,7 +131,7 @@ fi
 if [ ! "$state" = "playing" ]; then
   echo "♫"
 else
-  echo "$trunc_track - $trunc_artist $state_icon"
+  echo "♫ $trunc_track - $trunc_artist"
 fi
 echo "---"
 
