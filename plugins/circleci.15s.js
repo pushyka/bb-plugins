@@ -44,8 +44,8 @@ function processResponse(body) {
 }
 
 function printLine(requestBody) {
-  const { start_time, reponame, job_name, committer_name, subject, color } = requestBody;
-  console.log(`${start_time} (${reponame}:${job_name}) ${committer_name} - ${subject} | color=${color}`);
+  const { reponame, job_name, color } = requestBody;
+  console.log(`${reponame}:${job_name} | color=${color}`);
 }
 
 // stop date desc, with nulls first
