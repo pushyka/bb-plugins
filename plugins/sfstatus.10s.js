@@ -73,7 +73,7 @@ async function start() {
 
   console.log('General Messages | color=black')
   messages.forEach(o => {
-    console.log(`${o.subject} | href=${o.url} color=${COLORS[o.status]}`);
+    console.log(`[${o.id}] ${o.subject} | href=${o.url} color=${COLORS[o.status]}`);
   });
   console.log('---');
 
